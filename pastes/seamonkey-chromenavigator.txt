@@ -1,0 +1,27 @@
+Timestamp: 01/05/2021, 8:33:34 pm GMT+8
+Error: NS_ERROR_XPC_BAD_IID: Invalid InterfaceID
+Source File: chrome://chromenavigator/content/lib/global-vars.js
+Line: 28
+
+Timestamp: 01/05/2021, 8:33:34 pm GMT+8
+Error: SyntaxError: yield expression is only valid in generators
+Source File: chrome://chromenavigator/content/lib/parser.js
+Line: 22, Column: 21
+Source Code:
+      let contents = yield readManifest(manifests[i], manifests);
+
+Timestamp: 01/05/2021, 8:33:42 pm GMT+8
+Error: A promise chain failed to handle a rejection. Did you forget to '.catch', or did you forget to 'return'?
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Date: Sat May 01 2021 20:33:34 GMT+0800 (Philippine Standard Time)
+Full Message: ReferenceError: refreshChromeList is not defined
+Full Stack: onLoad/<@chrome://chromenavigator/content/chromenavigator.js:17:32
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:646:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:581:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:533:11
+
+Source File: chrome://chromenavigator/content/chromenavigator.js
+Line: 17
+Source Code:
+17

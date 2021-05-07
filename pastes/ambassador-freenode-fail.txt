@@ -1,0 +1,7 @@
+Timestamp: Tuesday, 06 April, 2021 12:46:18 PM PST
+Error: chat.freenode.net:6697 uses an invalid security certificate.
+
+The certificate is not trusted because the issuer certificate has expired.
+The certificate expired on Sunday, 09 August, 2020 01:03 PM. The current time is Tuesday, 06 April, 2021 12:46 PM.
+
+(Error code: SEC_ERROR_EXPIRED_ISSUER_CERTIFICATE)

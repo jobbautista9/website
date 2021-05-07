@@ -1,0 +1,4 @@
+Timestamp: Sunday, 02 May, 2021 11:25:17 AM PST
+Error: NS_ERROR_FILE_NOT_FOUND: Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIXPCComponents_Utils.import]
+Source File: chrome://elemhidehelper/content/processScript.js?gwddtozjsatfpgkqdksd
+Line: 30

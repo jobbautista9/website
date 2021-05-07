@@ -1,0 +1,4 @@
+Timestamp: Sunday, 02 May, 2021 11:15:05 AM PST
+Error: NS_ERROR_FILE_NOT_FOUND: Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIXPCComponents_Utils.import]
+Source File: jar:file:///home/job/.binary%20outcast/borealis/uki8svup.ehh/extensions/elemhidehelper@adblockplus.org.xpi!/lib/child/bootstrap.js?ukpgyivzfyrggtrtzhss&info=%7B%22addonID%22%3A%22elemhidehelper%40adblockplus.org%22%2C%22addonVersion%22%3A%221.4%22%2C%22addonRoot%22%3A%22jar%3Afile%3A%2F%2F%2Fhome%2Fjob%2F.binary%2520outcast%2Fborealis%2Fuki8svup.ehh%2Fextensions%2Felemhidehelper%40adblockplus.org.xpi!%2F%22%2C%22addonName%22%3A%22elemhidehelper%22%2C%22application%22%3A%22borealis%22%2C%22applicationVersion%22%3A%220.9.7766a1%22%2C%22platform%22%3A%22gecko%22%2C%22platformVersion%22%3A%224.8.0%22%2C%22elementMarkerClass%22%3A%22ukpgyivzfyrggtrtzhss%22%7D
+Line: 16

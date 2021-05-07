@@ -1,0 +1,6 @@
+Timestamp: Friday, 07 May, 2021 04:38:58 PM PST
+Error: au.tilde.chat:6697 uses an invalid security certificate.
+
+The certificate expired on Friday, 07 May, 2021 04:21 PM. The current time is Friday, 07 May, 2021 04:38 PM.
+
+(Error code: SEC_ERROR_EXPIRED_CERTIFICATE)
