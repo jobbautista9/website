@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reusing HTML - Job Bautista</title>
+    <link href="/index.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/light.css" rel="stylesheet" type="text/css" media="all" title="Light mode">
+    <link href="/dark.css" rel="alternate stylesheet" type="text/css" media="all" title="Dark mode">
+    <link rel="top" href="/" title="Job Bautista's personal website">
+    <link rel="up" href="./" title="Job Bautista's writings">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <script src="/nav.js"></script>
+      <noscript><iframe id="top" name="top" src="/nav.html"></iframe></noscript>
+    </header>
+    <hr />
+    <h1>Reusing HTML</h1>
+    <p>
+    When I was at the beginning of writing this website, I thought about creating a footer (which you see right now) that contains a convenient link back to my main page, an acknowledgement of Neocities (since it's included by default anyway when you start a website, so why not make use of it), and later a proud mark of a valid <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a>. Then I thought about a way to reuse that <a href="https://en.wikipedia.org/wiki/HTML">HTML</a> without copy-pasting the whole footer's code everytime I make a change to the footer. I settled with <a href="https://www.w3schools.com/tags/tag_iframe.asp">iframes</a>, because they didn't require any scripting, whether its <a href="https://en.wikipedia.org/wiki/Javascript">client-side</a> (which I have little knowledge of), or <a href="https://www.php.net/">server-side</a> (which I also have little knowledge of, and is not possible under Neocities' free plan anyway). I looked at other websites and see if they use iframes to reuse HTML. And not surprisingly, they don't. So why not use iframes? They seem to be more convenient, and doesn't require any scripting. Ok, not all browsers properly support iframes (<a href="https://en.wikipedia.org/wiki/w3m">w3m</a> totally doesn't support iframes at all, <a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)">lynx</a> at least allows the user to navigate to the content inside of the iframe), but that's not a concern for me. Javascript is more likely to break compatibility than iframes, I thought.
+    </p>
+    <h2>Enlightenment</h2>
+    <p>
+    Turns out there's a good reason why you shouldn't use iframes for reusing HTML. While it worked perfectly for my footer (as long as you remove the borders and adjust the width and height of the iframe, which I recommend doing in your site's global CSS), it wasn't the case for my header, even now. Y'see, if you try to put a header that occupies like a horizontal bar on your screen, into an iframe, it doesn't display well. It becomes obvious when you zoom in, or use a mobile browser like Safari in the iOS. The bar doesn't adjust to the screen or zoom size. So I had to learn how to make my header iframe responsive. <a href="https://www.w3schools.com/howto/howto_css_responsive_iframes.asp">The solution I found</a> did fix the problem by making the header wrap for smaller screens, but it introduced two new problems: the first one was that it resulted in a significant amount of unused space when rendered. That's unacceptable. I had to experiment with a lot of CSS to fix the problem, but I wasn't able to properly reclaim all of that unused space. If I did, it would then cover my first heading. So I settled with a compromise by setting the header tag's top padding to 4px, and bottom padding to 80px. It still resulted in some unused space, but it was a lot better than before, and it looks good in mobile devices in their portrait orientation. The other problem is that zooming in to 130% will bring up the scrollbar of the header's iframe. I decided to ignore that problem instead of trying to fix it (which could lead to more problems instead of eliminating it).
+    </p>
+    <h2>To end...</h2>
+    <p>
+    So I now fully understand why a lot of websites don't bother using iframes to reuse the HTML of their headers and footers. It's just too much of a hassle to keep those two look right while inside an iframe. Which is why they settled with Javascript, or PHP if they want maximum compatibility. Can't blame them.
+    </p>
+    <p>
+    I won't be replacing the iframe solution with JS though, because I think that's worse in terms of compatibility (think about the text-only browsers in text-only consoles). I might consider PHP, but only if it is really necessary, and when I become a <a href="https://neocities.org/supporter">Supporter</a> of Neocities. I hope the <a href="https://whatwg.org/" title="Web Hypertext Application Technology Working Group">WHATWG</a> consider making the reuse of HTML for headers and footers easier, and not require any sort of scripting to achieve that. They could either extend the existing <a href="https://www.w3schools.com/tags/tag_iframe.asp">iframe tag</a>, or create a new one (I suggest &#60;reuse&#62; with the src attribute).
+    </p>
+    <hr />
+    <footer>
+      <script src="/footer.js"></script>
+      <noscript><div><iframe id="bottom" name="bottom" src="/footer.html"></iframe></div></noscript>
+      <a id="navfix" href="/nav.html">navigation if your browser has faulty iframe support</a>
+    </footer>
+  </body>
+</html>

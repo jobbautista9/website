@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var themes = [
+  {
+    id: "pinball",
+    name: "Cyndaquil Pinball",
+    headerURL: "https://cdn.bulbagarden.net/upload/7/7e/PinRSani155.png",
+    textcolor: "#000",
+    accentcolor: "#F5AC78"
+  },
+  {
+    id: "dummy",
+    name: "Dummy",
+    headerURL: "http://www.3desktop.net/free-wallpapers/sky.jpg",
+    footerURL: "http://vistawallpapers.files.wordpress.com/2007/03/vista-wallpaper-wet-grass.jpg",
+    textcolor: "#bcf",
+    accentcolor: "#8888FF"
+  }
+];
+
+const INSTALL = "InstallBrowserTheme";
+const PREVIEW = "PreviewBrowserTheme";
+const RESET_PREVIEW = "ResetBrowserThemePreview";
+
+function setTheme(node, theme, action) {
+  node.setAttribute("data-browsertheme", JSON.stringify(themes[theme]));
+  var event = document.createEvent("Events");
+  event.initEvent(action, true, false);
+  node.dispatchEvent(event);
+}
+</script>
+</head>
+<body>
+<button onclick="setTheme(this, 0, INSTALL);"
+        onmouseover="setTheme(this, 0, PREVIEW);"
+        onmouseout="setTheme(this, 0, RESET_PREVIEW);">a</button>
+<button onclick="setTheme(this, 1, INSTALL);"
+        onmouseover="setTheme(this, 1, PREVIEW);"
+        onmouseout="setTheme(this, 1, RESET_PREVIEW);">b</button>
+</body>
+</html>

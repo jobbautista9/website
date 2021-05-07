@@ -1,0 +1,268 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+article {
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+	float: left;
+}
+figure {text-align:center;}
+div#infographic a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+div#infographic {
+	border: 0 none;
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Bitstream Vera Serif', 'serif';
+	font-size: 96%;
+	color: rgb(255, 255, 255);
+	background: url('../media/ig-back.png') rgb(51, 51, 51);
+	background-position: 0.39em 1.24em;
+	background-size: 2.35em;
+	max-width: 42.3em;
+	width: 100%;
+}
+div#infographic header {
+	background: url('../media/ig-darkback.png') rgb(26, 26, 26);
+	background-position: 0.39em 1.24em;
+	background-size: 2.35em;
+	color: rgb(255, 255, 255);
+	padding: 0;
+	padding-top: 1.8em;
+	border: 0;
+	margin: 0;
+}
+div#infographic footer {
+	background: url('../media/ig-darkback.png') rgb(26, 26, 26);
+	background-position: 0.39em 1.24em;
+	background-size: 2.35em;
+	color: rgb(255, 255, 255);
+	padding: 3em;
+	padding-bottom: 10em;
+	border: 0;
+	margin: 0;
+}
+div#infographic footer section.part {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+div#infographic footer h2{
+	display: none;
+}
+div#infographic footer section.part h3.title{
+	font-size: 110%;
+	font-weight: bold;
+}
+div#infographic footer section.part span.copyright{
+	font-style: italic;
+	display: block;
+}
+div#infographic footer section.part a.source{
+	display: block;
+}
+div#infographic footer section#original {
+	text-align: left;
+}
+div#infographic footer section#newversion {
+	text-align: right;
+}
+div#infographic header h1 {
+	padding: 0;
+	margin: auto;
+	border-width: 0.075em 0;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	width: 7.1em;
+	text-align: center;
+	font-size: 300%;
+	font-weight: normal;
+	vertical-align: top;
+	line-height: 0;
+}
+div#infographic header h1 span#igT1 {
+	position: relative;
+	left: 0.1em;
+	line-height: 90%;
+}
+div#infographic header h1 span#igT2 {
+	position: relative;
+	left: -0.1em;
+	line-height: 90%;
+}
+div#infographic header h1 span#igT3 {
+	font-variant: small-caps;
+	color: rgb(153, 204, 0);
+	line-height: 72%;
+}
+div#infographic header h1 span#igT4 {
+	font-size: 125%;
+	display: block;
+	line-height: 0.66%;
+	margin: 0.25em 0.1em;
+	float: right;
+}
+div#infographic header p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 135%;
+	padding: 0.8em;
+}
+span.cutout {
+	color: rgb(255, 255, 255);
+	background: rgb(26, 26, 26);
+}
+div#infographic div#content {
+	padding-top: 0.5em;
+}
+div#infographic section {
+	margin: 4.1em 0;
+}
+div#infographic section h2 {
+	display: none;
+}
+div#infographic section img {
+	display: none;
+}
+div#infographic .subsection {
+	padding-left: 10em;
+	margin: 1.1em 0;
+	height: 3.5em;
+	position: relative;
+}
+div#infographic .subsection h3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 7.4em;
+	height: 2.5926em
+}
+div#infographic .subsection p {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	padding-right: 3.75em;
+	padding-top: 1.4em;
+}
+div#infographic section#igSL p {
+	padding-right: 2.5em;
+}
+div#infographic section#igCH p {
+	padding-right: 4.5em;
+}
+div#infographic h3 {
+	font-weight: bold;
+	font-size: 135%;
+}
+div#infographic section#igWord section.subsection {
+	background: url('../media/right-structure.png') no-repeat right;
+	background-size: 2.23em;
+}
+div#infographic section#igChemProp .subsection {
+	background: url('../media/right-text.png') no-repeat right;
+	background-size: 2.23em;
+}
+div#infographic section#igHistEty .subsection {
+	background: url('../media/right-links.png') no-repeat right;
+	background-size: 2.23em;
+}
+div#infographic section#igQuantum .subsection {
+	background: url('../media/right-color.png') no-repeat right;
+	background-size: 2.23em;
+}
+div#infographic section#igWord .subsection h3 {
+	background: url('../media/left-structure.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp .subsection h3 {
+	background: url('../media/left-text.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igHistEty .subsection h3 {
+	background: url('../media/left-links.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igQuantum .subsection h3 {
+	background: url('../media/left-color.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igWord section#igHS h3 {
+	background: url('../media/pronunciation.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igWord section#igRO h3 {
+	background: url('../media/appearance.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp section#igGC h3 {
+	background: url('../media/state.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp section#igTT h3 {
+	background: url('../media/meltingpoint.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp section#igCP h3 {
+	background: url('../media/boilingpoint.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp section#igFS h3 {
+	background: url('../media/density.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igChemProp section#igLL h3 {
+	background: url('../media/atomicweight.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igHistEty section#igLR h3 {
+	background: url('../media/namedafter.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igHistEty section#igLF h3 {
+	background: url('../media/discovered.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igHistEty section#igSL h3 {
+	background: url('../media/isolated.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igHistEty section#igCH h3 {
+	background: url('../media/isotopes.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igQuantum section#igAP h3 {
+	background: url('../media/electronconfig.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igQuantum section#igRC h3 {
+	background: url('../media/orbitaldiagram.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igQuantum section#igAF h3 {
+	background: url('../media/quantumnumbers.png') no-repeat left;
+	background-size: 6.75em;
+}
+div#infographic section#igWord h3 {
+	color: rgb(153, 204, 51);
+}
+div#infographic section#igChemProp h3 {
+	color: rgb(153, 204, 255);
+}
+div#infographic section#igHistEty h3 {
+	color: rgb(255, 204, 51);
+}
+div#infographic section#igQuantum h3 {
+	color: rgb(255, 153, 102);
+}
+span.caps {
+	text-transform: uppercase;
+}
+span.notinoriginal {
+	display: none;
+}
