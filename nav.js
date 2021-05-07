@@ -1,4 +1,4 @@
 var header = document.getElementsByTagName("header")[0];
-fetch("/nav.html")
+fetch("/~job/nav.html")
  .then(response => response.text())
  .then(text => header.innerHTML = text);
