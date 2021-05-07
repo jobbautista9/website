@@ -1,10 +1,5 @@
-@media (prefers-color-scheme: light) {
-	@import url("/~job/light.css");
-}
-
-@media (prefers-color-scheme: dark) {
-	@import url("/~job/dark.css");
-}
+@import url("/~job/light.css");
+@import url("/~job/dark.css");
 
 h1, header, footer, .txtcenter, .multipleimgcenter { text-align:center; }
 

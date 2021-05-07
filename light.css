@@ -1,9 +1,11 @@
-body {
+@media (prefers-color-scheme: light) {
+ body {
 	color:#000;
 	background-color:#faf98b;
-}
+ }
 
-a:hover {
+ a:hover {
   color:#a80300;
   background-color:#faf98b;
+ }
 }
